@@ -25,7 +25,7 @@ body {
   justify-content: center;
   display: flex;
   transform: translateX(400%);
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
 .box:nth-of-type(even) {
