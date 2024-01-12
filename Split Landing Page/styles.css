@@ -45,8 +45,8 @@ h1 {
 }
 
 .split.xbox .btn:hover {
-  background-color: rgba(0, 0, 255, 0.563);
-  border-color: rgba(137, 43, 226, 0.54);
+  background-color: green;
+  border-color: rgba(43, 226, 159, 0.259);
 }
 
 .container {
