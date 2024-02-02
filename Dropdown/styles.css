@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  /* list-style-type: none; */
+
+}
+
+body {
+  background: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+.container {
+  background-color: #0b1215e1;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  color: #fff;
+  min-width: 10rem;
+  padding: 1rem;
+  overflow: hidden;
+
+
+}
+
+.container a {
+  text-decoration: none;
+}
+/* aca modificas el espacio que tendra el menu */
+.titulos { 
+  border: 0;
+  padding: 0.5rem;
+  background-color: #0b1215;
+  color: #4700fac9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  transition: all ease-in-out 0.25s;
+}
+/* aca al pasar el mouse por el menu */
+.titulos:hover {
+  background-color: #292f3b;
+  color: #2568c7;
+}
+
+
+.titulos--open {
+  border-radius: 30px;
+  transition: all 200ms;
+  width: 100%;
+  height: 100%;
+}
+
+.titulos--open:hover {
+  color: #fefefe;
+  border-radius: 8px;
+  background-color: #292f3b;
+}
+
+
+.container > ul {
+  max-height: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 14px;
+  opacity: 0;
+  font-size: smaller;
+  visibility: hidden;
+  transition: all ease-in-out 0.2s;
+}
+
+.titulos--open + ul {
+  visibility: visible;
+  max-height: 400px;
+  padding-left: 22px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.container > ul > li {
+  height: 48px;
+  display: flex;
+  width: 100%;
+  font-size: 0.9rem;
+  align-items: center;
+  border-left: 2px solid #fff;
+}
+
+.container > ul > li > a {
+  color: #fff;
+  padding: 1rem 0.75rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.container >ul >li:hover {
+  color: #fff;
+  background-color: #292f3b;
+  width: 100%;
+  border-radius: 0 15px 15px 0;
+}
+
+
+

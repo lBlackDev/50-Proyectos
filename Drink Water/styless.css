@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(64, 171, 237);
+  overflow: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.drink {
+  height: 330px;
+  width: 150px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 50px 50px;
+  border: 6px solid green;
+  overflow: hidden;
+  margin: 30px 0;
+  
+}
+
+
+.drink.drinkWater {
+  height: 95px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+
+}
+
+.drink.drinkWater.full {
+  background-color: #6ab3f8;
+  color: #000000;
+}
+
+.water {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color:  #6ab3f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease ;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}

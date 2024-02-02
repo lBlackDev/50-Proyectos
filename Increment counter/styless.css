@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.container {
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background: rgba(128, 0, 128, 0.825);
+}
+
+.counter-social {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 50px;
+  font-size: 15px;
+
+  
+}
+
+.counter {
+  margin-top: 10px;
+  font-size: 4rem;
+}
+
+i {
+  font-size: 4.5rem;
+}
+
+@media (max-width: 580px) {
+  .container {
+    overflow: auto;
+    display: grid;
+    
+  }
+}
